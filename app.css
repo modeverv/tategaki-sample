@@ -1,0 +1,60 @@
+body {
+    color:#aaa;
+    background-color:#000;
+}
+p {
+    color:#aaa;
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin:0;
+}
+footer {
+  display:none;
+}
+.modal {
+    color:#000;
+}
+#wrapper {
+}
+.widget-episode-inner {
+    max-width: 40em;
+    height:100%;
+    overflow-x:scroll;
+    padding: 0;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    line-height: 1.8em;
+    font-size:40px;
+    display: inline-block;
+    margin: 0 auto;
+    font-family: dcsymbols, 游明朝, YuMincho, "ヒラギノ明朝 Pr6N", "Hiragino Mincho Pr6N", "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "ヒラギノ明朝 StdN", "Hiragino Mincho StdN", HiraMinProN-W3, HGS明朝B, HG明朝B, dcsymbols, "Helvetica Neue", Helvetica, Arial, "ヒラギノ角ゴ Pr6N", "Hiragino Kaku Gothic Pr6N", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ StdN", "Hiragino Kaku Gothic StdN", "Segoe UI", Verdana, メイリオ, Meiryo, sans-serif;
+}
+.container {
+   max-width: 40em;
+   padding: 80px 60px 80px 60px;
+}
+.author {
+  text-align:right;
+  padding-bottom:1em;
+}
+#stitle {
+    position:absolute;
+    left:0;
+    top:0;
+}
+.modal-content {
+    background-color:#000;
+    color:#fff;
+}
+#right {
+    position:absolute;
+    top:50%;
+    right: 60px;
+}
+#left {
+    position:absolute;
+    top:50%;
+    left: 60px;
+}
