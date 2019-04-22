@@ -3,61 +3,57 @@
   <meta charset="utf-8"/>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="app.css">
+  <title>カクヨム縦書きリーダー</title>
 </head>
 <body>
 
-  <div id="stitle">
-    <button type="button" class="btn btn-dark btn-sm" data-toggle="modal" data-target="#modal">UI</button>
-  </div>
-<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">カクヨム縦書きリーダー</h5>
-        <button style="display:none" type="button" id="close" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="src" class="col-form-label">URL:</label>
-            <input placeholder="https://kakuyomu.jp/works/1177354054881684388/episodes/1177354054881686249" type="text" class="form-control" id="src">
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button id="load" type="button" class="btn btn-primary" onclick="load()">Load</button>
-      </div>
+  <button id="uibutton" type="button" class="btn btn-dark" data-toggle="modal" data-target="#modal">UI</button>
 
-    </div>
-  </div>
-</div>
-<span id="right" style="font-size: 3em; color: #ccc;">
-  <i class="fas fa-chevron-right"></i>
-</span>
-<span id="left" style="font-size: 3em; color: #ccc;">
-  <i class="fas fa-chevron-left"></i>
-</span>
-  <div id="wrapper" class="container">
-    <div class="row" id="c"> 
-      <div class="center-block col-md-12 widget-episode-inner" id="c">
-        <div id="cc">
-          Click UI button to start.
+  <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">カクヨム縦書きリーダー</h5>
+          <button style="display:none" type="button" id="close" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="src" class="col-form-label">URL:</label>
+              <input placeholder="url of カクヨム" type="text" class="form-control" id="src">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button id="load" type="button" class="btn btn-primary" onclick="load()">Load</button>
         </div>
       </div>
     </div>
   </div>
+  <span id="right" style="font-size: 3em; color: #ccc;">
+    <i class="fas fa-chevron-right"></i>
+  </span>
+  <span id="left" style="font-size: 3em; color: #ccc;">
+    <i class="fas fa-chevron-left"></i>
+  </span>
+  <div id="wrapper" class="container">
+    <div class="row"> 
+      <div class="center-block col-md-12" id="c">
+        Click UI button to start.
+      </div>
+    </div>
+  </div>
 
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script
   src="https://code.jquery.com/jquery-3.4.0.min.js"
   integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
-   crossorigin="anonymous"></script>
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
 <script src="app.js"></script>
 </body>
